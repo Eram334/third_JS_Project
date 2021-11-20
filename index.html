@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        box-sizing: border-box;
+
+    }
+
+    .btn {
+        margin-left: 45%;
+        color: purple;
+        display:inline;
+      
+
+    }
+
+    body {
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        background: #0b0b30;
+        /* yeh dono se center m aayega  yeha translate ka use bhi kr skte h yeh esay h center me lane ka */
+
+    }
+    img{
+        height: 30vh;
+        width: 150px;
+        margin-left: 200px;
+        margin-bottom: 10px;
+
+    }
+    .bluboff{
+          margin-left: 50px;
+    }
+    .blubon{
+        margin-left: 50px;
+       
+    }
+</style>
+<body>
+    <div class="main-heading">
+        <h1 class="text-light text-center ml-5">Can you turn the light on 😄 🤭 </h1><br><br><br>
+        <button class="btn btn-warning blubon" onclick="document.getElementById('myimage').src=`lighton.ico` ">Turn on the light</button><br><br>
+       
+        <img src="lightoff.png" alt="lightoff" id="myimage">
+
+        <button class="btn btn-warning bluboff" onclick="document.getElementById('myimage').src=`lightoff.png` ">Turn off the light</button>
+    
+    </div>
+    
+</body>
+</html>
+
+
